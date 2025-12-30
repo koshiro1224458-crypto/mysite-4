@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | 株式会社 Index Finger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sp.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="INDEX＿ロゴ_edited.avif" alt="indexfingerロゴ画像">
+        </h1>
+        <nav>
+            <a href="file:///c%3A/Users/koshi/Desktop/IF-%E6%8E%A1%E7%94%A8%E6%83%85%E5%A0%B1/index.html">採用情報</a>
+            <a href="file:///c%3A/Users/koshi/Desktop/IF-%E4%BC%9A%E7%A4%BE%E6%A6%82%E8%A6%81/index.html">会社概要</a>
+            <a href="" class="form-btn">お問い合わせ</a>
+        </nav>
+    </header>
+
+    <div class="header">
+        <button class="hamburger-overlay" aria-label="メニュー" aria-controls="overlay-menu" aria-expanded="false">
+            <span class="hamburger-overlay__line"></span>
+            <span class="hamburger-overlay__line"></span>
+            <span class="hamburger-overlay__line"></span>
+        </button>
+
+        <nav id="overlay-menu" class="nav-overlay" aria-hidden="true">
+            <div class="nav-overlay__content">
+                <ul class="nav-overlay__list">
+                    <li class="nav-overlay__item"><a href="file:///c%3A/Users/koshi/Desktop/IF-%E6%8E%A1%E7%94%A8%E6%83%85%E5%A0%B1/index.html" class="nav-overlay__link">採用情報</a></li>
+                    <li class="nav-overlay__item"><a
+                            href="file:///c%3A/Users/koshi/Desktop/IF-%E4%BC%9A%E7%A4%BE%E6%A6%82%E8%A6%81/index.html"
+                            class="nav-overlay__link">会社概要</a></li>
+                    <li class="nav-overlay__item"><a
+                            href="file:///c%3A/Users/koshi/Desktop/IF-%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/index.html"
+                            class="nav-overlay__link">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero">
+            <h3>CONTACT</h3>
+            <h2>お問い合わせ</h2>
+        </section>
+
+
+
+        <div class="contact-container">
+            <form action="#" method="post">
+
+                <!-- お問い合わせ種別 -->
+                <label class="form-label">お問い合わせ内容</label>
+
+                <div class="radio-list">
+                    <label class="radio-item">
+                        <input type="radio" name="type" value="相談希望（法人のお客様）" required>
+                        <span>相談希望（法人のお客様）</span>
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="type" value="採用応募">
+                        <span>採用応募</span>
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="type" value="その他">
+                        <span>その他</span>
+                    </label>
+                </div>
+
+            </form>
+
+            <!-- 名前 -->
+            <div class="form-group">
+                <label class="input-label">名前 <span class="required">*</span></label>
+                <input type="text" name="name" required placeholder="田中　太郎">
+            </div>
+
+            <!-- メールアドレス -->
+            <div class="form-group">
+                <label class="input-label">メールアドレス <span class="required">*</span></label>
+                <input type="email" name="email" required placeholder="email@example.com">
+            </div>
+
+            <!-- 電話番号 -->
+            <div class="form-group">
+                <label class="input-label">電話番号 <span class="required">*</span></label>
+                <input type="tel" name="phone" required placeholder="012-3456-7890">
+            </div>
+
+            <!-- お問い合わせ内容 -->
+            <div class="form-group">
+                <label class="input-label">お問い合わせ内容</label>
+                <textarea name="message" rows="5" placeholder="ご自由にご記入ください"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">送信する</button>
+            </div>
+        </div>
+
+        <section class="contact">
+            <h3>contact</h3>
+            <h2>お問い合わせ</h2>
+            <p>ご相談・ご質問などお気軽にお問い合わせください</p>
+            <div>
+                <img src="IF-tel.avif" alt="電話番号">
+                <a href="">お問い合わせ</a>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <img src="INDEX＿ロゴ2.avif" alt="ロゴ">
+        <p>大阪府大阪市中央区本町4丁目7-4 本町グラマシー203号室</p>
+        <p> 070-9033-7985</p>
+        <p>index.finger-official@indexfinger.one</p>
+    </footer>
+
+</body>
+
+<script src="main.js"></script>

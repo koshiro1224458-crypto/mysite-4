@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+    list-style: none;
+    /* background-color: rgb(255, 254, 254); */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+
+}
+
+header nav {
+    display: block;
+    width: 40%;
+    display: flex;
+}
+
+header nav a {
+
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+}
+
+.header {
+    display: none;
+}
+
+
+.form-btn {
+    background-color: rgb(16, 16, 199);
+    color: white;
+    border-radius: 20px;
+}
+
+
+/* メイン */
+
+.hero {
+    background-image: url(IF-about00.avif);
+    object-fit: cover;
+    height: 250px;
+    text-align: center;
+    align-items: center;
+}
+
+.hero h3 {
+    color: white;
+    padding-top: 70px;
+    font-size: 30px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 40px;
+}
+
+
+/* お問い合わせFORM */
+
+.contact-container {
+    max-width: 500px;
+    margin: 100px auto;
+    font-family: "Segoe UI", sans-serif;
+
+}
+
+.form-label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.radio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 12px 0 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* デフォルトのラジオボタンを隠す */
+.radio-item input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #cfe7ff; /* 元々が薄い青色 */
+    
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* 選択時の黒丸 */
+.radio-item input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000; /* 黒丸 */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-item input[type="radio"] {
+    transform: scale(1.2);
+
+}
+
+
+/* 入力フォーム */
+.form-group {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+/* 赤い必須マーク */
+.required {
+    color: blue;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 20px;
+    border: 1px solid rgb(16, 16, 199);
+    border-radius: 6px;
+    font-size: 15px;
+    width: 90%;
+    box-sizing: border-box;
+    background:  #cfe7ff; 
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* 送信ボタン */
+/* 送信ボタン */
+.submit-btn {
+    width: 90%;
+    padding: 12px 0;
+    background-color: rgb(16, 16, 199);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* ホバー時に濃くする */
+.submit-btn:hover {
+    background-color: #4da3ff;
+}
+
+
+/* お問い合わせ */
+.contact {
+    text-align: center;
+    background-image: linear-gradient(rgba(83, 81, 81, 0.85), rgba(26, 25, 25, 0.85)), url(IF-recruit01.avif);
+    object-fit: cover;
+    padding-bottom: 50px;
+    
+}
+
+.contact h3 {
+    font-size: 25px;
+    color: white;
+    padding-top: 40px;
+
+}
+
+.contact h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact div {
+    display: flex;
+background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.contact div img {
+    width: 50%;
+}
+
+.contact div a {
+    background-color: rgb(16, 16, 199);
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    padding: 25px;
+    width: 350px;
+
+
+}
+
+/* フッター */
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer p {
+
+    font-size: 15px;
+}

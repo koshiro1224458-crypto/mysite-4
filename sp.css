@@ -1,0 +1,195 @@
+@media(max-width:800px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    header h1 img {
+        width: 300px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+
+    /* お問い合わせFORM----------------------- */
+
+    .contact-container {
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    /* お問い合わせ----------------------- */
+
+    .contact h3 {
+        font-size: 25px;
+        color: white;
+        padding-top: 10px;
+
+    }
+
+    .contact p {
+        color: white;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contact div {
+        display: flex;
+        background-color: white;
+        width: 90%;
+        margin-left: 5%;
+        padding: 5px;
+    }
+
+    .contact div img {
+        width: 70%;
+    }
+
+    .contact div a {
+        background-color: rgb(16, 16, 199);
+        color: white;
+        border-radius: 20px;
+        display: block;
+        text-align: center;
+        padding: 11px;
+        width: 350px;
+        align-items: center;
+
+    }
+
+    /* ハンバーガー--------------------------- */
+
+    .header {
+        display: block;
+    }
+
+    .hamburger-overlay {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        width: 48px;
+        height: 48px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .hamburger-overlay__line {
+        position: absolute;
+        left: 11px;
+        width: 26px;
+        height: 2px;
+        background-color: #333;
+        transition: all .6s;
+    }
+
+    .hamburger-overlay__line:nth-of-type(1) {
+        top: 14px;
+    }
+
+    .hamburger-overlay__line:nth-of-type(2) {
+        top: 23px;
+    }
+
+    .hamburger-overlay__line:nth-of-type(3) {
+        top: 32px;
+    }
+
+    .hamburger-overlay.active .hamburger-overlay__line {
+        background-color: #fff;
+    }
+
+    .hamburger-overlay.active .hamburger-overlay__line:nth-of-type(1) {
+        transform: translateY(9px) rotate(-45deg);
+    }
+
+    .hamburger-overlay.active .hamburger-overlay__line:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .hamburger-overlay.active .hamburger-overlay__line:nth-of-type(3) {
+        transform: translateY(-9px) rotate(45deg);
+    }
+
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        visibility: hidden;
+        opacity: 0;
+        transition: all .6s;
+        z-index: 900;
+    }
+
+    .nav-overlay.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-overlay__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-overlay__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-overlay__item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all .6s;
+    }
+
+    .nav-overlay.active .nav-overlay__item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-overlay.active .nav-overlay__item:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .nav-overlay.active .nav-overlay__item:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .nav-overlay.active .nav-overlay__item:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    .nav-overlay.active .nav-overlay__item:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    .nav-overlay__link {
+        display: inline-block;
+        padding: 20px;
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color .3s;
+    }
+}
